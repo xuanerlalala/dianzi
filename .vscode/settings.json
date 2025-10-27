@@ -6,12 +6,17 @@
         "*": false,
         "python": true
     },
-    // ⚙️ 启用按下 Ctrl + Enter 才触发补全（手动触发）
+    // ✋ 启用按下 Ctrl + Enter 才触发补全（手动触发）
     "editor.inlineSuggest.enabled": false,
-    // 🧠 可选：自动格式化 Python 代码（更整洁）
+    // 💬 可选：自动格式化 Python 代码（更整洁）
     "editor.formatOnSave": true,
     "[python]": {
         "editor.defaultFormatter": "ms-python.python"
     },
-    "code-runner.runInTerminal": false
+    // s 让 Python 默认在终端运行，而不是输出面板
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap.python": "python -u",
+    "python.terminal.executeInFileDir": true,
+    "python.terminal.launchArgs": [],
+    "python.execution.defaultInterpreterPath": "python"
 }
